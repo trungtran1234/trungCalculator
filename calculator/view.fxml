@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="500.0" prefWidth="316.0"  xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.controller">
+   <center>
+      <AnchorPane prefHeight="279.0" prefWidth="313.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="355.0" prefWidth="313.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="288.3332926432292" minHeight="10.0" prefHeight="275.6666666666667" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="168.33331298828125" minHeight="10.0" prefHeight="69.66666666666669" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.halignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="91.33334350585938" minHeight="0.0" prefHeight="69.66664632161458" />
+                      <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="67.33333333333331" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="70.66666666666669" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="67.00001017252603" minHeight="10.0" prefHeight="61.333333333333314" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button id="btn" fx:id="eight" layoutX="17.0" layoutY="13.0" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: gray; -fx-text-fill: white;" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="four" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: gray; -fx-text-fill: white;" text="4" textAlignment="CENTER" GridPane.rowIndex="2">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="seven" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: gray; -fx-text-fill: white;" text="7" textAlignment="CENTER" GridPane.rowIndex="1">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="nine" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: gray; -fx-text-fill: white;" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="divide" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: orange; -fx-text-fill: white;" text="➗" textAlignment="CENTER" GridPane.columnIndex="3">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="multiply" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: orange; -fx-text-fill: white;" text="x" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="five" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: gray; -fx-text-fill: white;" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="six" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: gray; -fx-text-fill: white;" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="subtract" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: orange; -fx-text-fill: white;" text="-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="one" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: gray; -fx-text-fill: white;" text="1" textAlignment="CENTER" GridPane.rowIndex="3">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="two" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: gray; -fx-text-fill: white;" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="three" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: gray; -fx-text-fill: white;" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="plus" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: orange; -fx-text-fill: white;" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="clear" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: lightgray;" text="C" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="percent" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: lightgray;" text="\%" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="negate" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 40; -fx-background-color: lightgray;" text="+/-" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="80.0" prefWidth="313.0" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="158.33335367838544" minWidth="10.0" prefWidth="156.99997965494794" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="80.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="95.33331298828128" minWidth="10.0" prefWidth="76.00000000000003" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button id="btn" fx:id="zero" mnemonicParsing="false" onAction="#calculate" prefHeight="59.0" prefWidth="143.0" style="-fx-background-radius: 50; -fx-background-color: gray; -fx-text-fill: white;" text="0" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="dot" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 50; -fx-background-color: gray; -fx-text-fill: white;" text="." textAlignment="CENTER" GridPane.columnIndex="1">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn" fx:id="equal" mnemonicParsing="false" onAction="#calculate" prefHeight="62.0" prefWidth="66.0" style="-fx-background-radius: 50; -fx-background-color: orange; -fx-text-fill: white;" text="=" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="149.0" prefWidth="313.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="display" alignment="BASELINE_RIGHT" editable="false" layoutX="7.0" layoutY="8.0" prefHeight="131.0" prefWidth="297.0" style="-fx-background-color: black; -fx-text-fill: white;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
